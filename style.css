@@ -1,0 +1,168 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, ul, li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ul{
+  margin: 0;
+	padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+  padding-left: 0px;
+}
+body {
+	line-height: 1;
+  
+}
+
+
+/* шапка */
+.navbar{
+  background-color:darkblue;
+  height: 80px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  
+}
+.navbar__logo{
+  margin-bottom: 30px;
+}
+.navbar__title{
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+}
+.navbar__title:hover{
+  color:white;
+}
+.navbar__container{
+  margin-left: 60px;
+}
+
+/*-------------------------------*/
+.wheather__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* карточка текущей погоды */
+.card__wheather{
+  background-color: skyblue;
+  width: 300px;
+  margin: 30px 60px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+.card-title{
+  margin-left: 45px;
+}
+.card-temperature{
+  font-size: 60px;
+  margin-left: 45px;
+}
+.card-icon{
+  margin-left: 25px;
+  height: 150px;
+}
+.flush{
+ list-style-type: none ;
+}
+/*-------------------------------*/
+/* карточка графика */
+.card__wheather-graphic{
+  width: 900px;
+  height: 450px;
+  margin: 30px 60px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+/*-------------------------------*/
+/* контейнер погоды на 3 дня */
+.card__wheather-list{
+  
+  background-color: white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* height: 400px; */
+  margin: 30px 60px;
+  
+  justify-content: space-between;
+
+}
+.flush-list{
+  list-style-type: none ;
+  
+}
+/*-------------------------------*/
+/* завтра */
+.card__wheather__tomorrow{
+  background-color:#AFEEEE;
+  width: 33%;
+}
+.card-weekday__tomorrow{
+  margin-left: 45px;
+}
+.card-title__tomorrow{
+  margin-left: 45px;
+}
+.card-temperature__tomorrow{
+  font-size: 60px;
+  margin-left: 45px;
+}
+.card-icon__tomorrow{
+  margin-left: 45px;
+  
+}
+/* послезавтра */
+.card__wheather__aftertomorrow{
+  background-color:#AFEEEE;
+  width: 33%;
+}
+.card-weekday__aftertomorrow{
+  margin-left: 45px;
+}
+.card-title__aftertomorrow{
+  margin-left: 45px;
+}
+.card-temperature__aftertomorrow{
+  font-size: 60px;
+  margin-left: 45px;
+}
+.card-icon__aftertomorrow{
+  margin-left: 45px;
+  
+}
+/* послепослезавтра */
+.card__wheather__afteraftertomorrow{
+  background-color:#AFEEEE;
+  width: 33%;
+}
+.card-weekday{
+  margin-left: 45px;
+}
+.card-title__afteraftertomorrow{
+  margin-left: 45px;
+}
+.card-temperature__afteraftertomorrow{
+  font-size: 60px;
+  margin-left: 45px;
+}
+.card-icon__afteraftertomorrow{
+  
+  margin-left: 45px;
+}
+
+
+
+
+
+
+

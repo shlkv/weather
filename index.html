@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar ">
+		<div class="navbar__container">
+      <img class="navbar__logo"src="/img/pngwing.com.png" alt="" height="56">
+			<a class="navbar__title "href="#" class="navbar-brand">Wheather</a>
+		</div>
+	</nav>
+
+   <div class="wheather__container">
+      <div class="card__wheather" >
+         <div class="card-body">
+         <h5 class="card-title"></h5>
+         <p class="card-temperature"></p>
+         <div class="card-icon">
+            
+         </div>
+         </div>
+         <ul class="flush">
+         <li class="card-type"></li>
+         <li class="card-middle"></li>
+         </ul>
+      </div>
+
+
+    <!-- график погоды -->
+    <div class="card card__wheather-graphic" >
+      <canvas id="myChart"></canvas>
+    </div>
+
+
+    
+     <!-- контейнер с погодой на три дня -->
+    <div class="card__wheather-list" >
+     <!-- завтра  -->
+      <div class="card__wheather__tomorrow" >
+         <div class="card-body">
+            <h3 class="card-weekday__tomorrow"></h3>
+            <h5 class="card-title__tomorrow"></h5>
+            <p class="card-temperature__tomorrow"></p>
+         <div class="card-icon__tomorrow">
+            
+         </div>
+         </div>
+         <ul class="flush-list">
+         <li class="card-type__tomorrow"></li>
+         <li class="card-middle__tomorrow"></li>
+         </ul>
+      </div>
+      <!-- послезавтра -->
+      <div class="card__wheather__aftertomorrow" >
+         <div class="card-body">
+            <h3 class="card-weekday__aftertomorrow"></h3>
+            <h5 class="card-title__aftertomorrow"></h5>
+            <p class="card-temperature__aftertomorrow"></p>
+         <div class="card-icon__aftertomorrow">
+            
+         </div>
+         </div>
+         <ul class="flush-list">
+         <li class="card-type__aftertomorrow"></li>
+         <li class="card-middle__aftertomorrow"></li>
+         </ul>
+      </div>
+      <!-- после послезавтра -->
+      <div class="card__wheather__afteraftertomorrow" >
+         <div class="card-body">
+            <h3 class="card-weekday"></h3>
+            <h5 class="card-title__afteraftertomorrow"></h5>
+            <p class="card-temperature__afteraftertomorrow"></p>
+         <div class="card-icon__afteraftertomorrow">
+            
+         </div>
+         </div>
+         <ul class="flush-list">
+            <li class="card-type__afteraftertomorrow"></li>
+            <li class="card-middle__afteraftertomorrow"></li>
+         </ul>
+      </div>
+      
+    </div>
+   </div>
+  
+ 
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
